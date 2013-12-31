@@ -1,0 +1,26 @@
+\pdfprotrudechars2 \pdfadjustspacing2 \pdfminorversion=7 \pdfcompresslevel=9
+\pdfobjcompresslevel=3
+\documentclass[12pt,a4paper]{article}
+\newcommand{\aiintro}[2]{\gresetfirstannotation{\scriptsize #1}\gresetsecondannotation{\scriptsize #2}}
+\usepackage{luatextra}
+\usepackage{fontspec}
+\usepackage{gregoriotex}
+\setgregoriofont{greciliae}
+\setgrefactor{17}
+\newfontfamily\initfamily{Lettrines pro 800}\def\greinitialformat#1{{\fontsize{32}{12}\selectfont\initfamily #1}}
+\newfontfamily\choralsignfont{Linux Libertine Display O}%
+    \def\grehighchoralsignstyle#1{{\tiny\selectfont\choralsignfont\itshape #1}}%
+    \def\grelowchoralsignstyle#1{{\tiny\selectfont\choralsignfont\itshape #1}}
+\setmainfont[Ligatures={Common,TeX},Numbers=OldStyle]{Linux Libertine Display O}
+\setsansfont[Ligatures={Common,TeX},Numbers=OldStyle]{Kp}
+\setmonofont[Ligatures={TeX}]{Courier New}
+\begin{document}
+\begin{center}
+ {\huge\sffamily\bfseries Tua est poténtia}
+\end{center}
+\aiintro{}{}
+\commentary{\textit{}}
+\includegabcscore{TuaEstPotentia_AM.gabc}
+ 
+ 
+\end{document}
