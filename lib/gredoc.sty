@@ -111,11 +111,11 @@
 \SetTracking{encoding={*}, shape=sc}{0}
 \newlength{\tailletemp} \newlength{\taillepolice}
 \setlength{\tailletemp}{\grefactor pt} \setlength{\taillepolice}{1\tailletemp}
-\font\lettrines=l800.ttf at 2.2\tailletemp
+\newfontfamily\lettrines[Scale=1.3]{l800}
 \def\gretextformat#1{{\fontsize{\taillepolice}{\taillepolice}\selectfont #1}}
 \def\greinitialformat#1{{\lettrines #1}}
-\font\lettrinetexte=l800.ttf at 4\baselineskip
-\renewcommand{\LettrineFont}{\lettrinetexte}
+%\font\lettrinetexte=l800.ttf at 4\baselineskip
+%\renewcommand{\LettrineFont}{\lettrinetexte}
 \setlength{\DefaultFindent}{-2em}
 \let\oldlettrine\lettrine
 \def\lettrine#1#2{\vspace{-1.5\baselineskip}\oldlettrine{#1}{#2}}
