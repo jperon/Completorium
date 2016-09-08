@@ -102,7 +102,7 @@
 \grechangestaffsize{\value{facteur}}
 
 %%% Polices de caractères.
-\RequirePackage{libertine,lettrine}
+\RequirePackage{libertine}
 \setmainfont[%
 	Numbers = {Proportional,OldStyle}%     Style des nombres
 	, WordSpace = {1.5,1.5,3}%             Espacement entre les mots
@@ -122,8 +122,8 @@
 \SetTracking{encoding={*}, shape=sc}{0}
 \newlength{\tailletemp} \newlength{\taillepolice}
 \setlength{\tailletemp}{\value{facteur} pt} \setlength{\taillepolice}{1\tailletemp}
-\newfontfamily\lettrines[Scale=2]{l800}
-\newfontfamily\glettrines[Scale=4]{l800}
+\newfontfamily\lettrines[Scale=1.5]{l800}
+\newfontfamily\glettrines[Scale=3]{l800}
 \def\gretextformat#1{{\fontsize{\taillepolice}{\taillepolice}\selectfont #1}}
 \grechangestyle{initial}{\lettrines}
 \grechangestyle{biginitial}{\glettrines\rubrum}
