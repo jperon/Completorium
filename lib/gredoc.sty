@@ -308,11 +308,12 @@
 \grechangedim{annotationraise}{-1mm}{fixed}
 
 %%% Insertion d'une partition
-\newcommand{\cantus}[4]{{%
-	\greannotation{{\rubrum\scriptsize \textsc{#3}}}
-	\greannotation{\raisebox{.5mm}{\rubrum\scriptsize \textsc{#4}}}
+\newcommand{\cantus}[5][1]{{%
+    \gresetinitiallines{#1}
+	\greannotation{{\rubrum\scriptsize \textsc{#4}}}
+	\greannotation{\raisebox{.5mm}{\rubrum\scriptsize \textsc{#5}}}
 	{\widowpenalties 3 0 0 0 \clubpenalties 3 0 0 0%\nowidow[1]\noclub[1]
-		\gregorioscore{gabc/#1/#2.gabc}%
+		\gregorioscore{gabc/#2/#3.gabc}%
 	}
 }
 \smallskip
