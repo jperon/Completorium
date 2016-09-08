@@ -2,7 +2,6 @@
 %Apercu:gedit SedLiberaNos.tex
 name:SedLiberaNos;
 office-part:Verset;
-initial-style:0;
 %%
 
 (c3)<alt>\rubrica{Tous}</alt>
