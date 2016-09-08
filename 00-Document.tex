@@ -14,6 +14,10 @@ a6paper%                       Taille de page.
 
 % Par souci de clarté, la définition des commandes est reportée dans un document annexe.
 \usepackage{gredoc}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\scr@startchapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
 
 \title{Complies}
 \date{\includegraphics[height=.4\paperheight]{Couverture}}
