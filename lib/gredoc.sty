@@ -670,12 +670,12 @@
 	\AND \(\value{ultimus} > \value{versus}%
 	\OR \commandkey{ultimus} = 0\)
 }{%
-	\noindent{\rubrum\arabic{numerus}.}\hspace{1ex}#1\par\stepcounter{numerus}%
+	\noindent\arabic{numerus}.\hspace{1ex}#1\par\stepcounter{numerus}%
 }\par
 }
 \newcommand{\versusgloria}[1]{%
 	\stepcounter{versus}
-	\noindent{\rubrum\arabic{numerus}.}\hspace{1ex}#1\par\stepcounter{numerus}%
+	\noindent\arabic{numerus}.\hspace{1ex}#1\par\stepcounter{numerus}%
 }
 
 %Pour appeler un Psaume, un Cantique, le Gloria
