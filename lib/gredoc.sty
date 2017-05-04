@@ -123,13 +123,8 @@
 \newlength{\tailletemp} \newlength{\taillepolice}
 \setlength{\tailletemp}{\value{facteur} pt} \setlength{\taillepolice}{1\tailletemp}
 \newfontfamily\lettrines[Scale=1.5]{l800}
-\newfontfamily\glettrines[Scale=3]{l800}
 \def\gretextformat#1{{\fontsize{\taillepolice}{\taillepolice}\selectfont #1}}
 \grechangestyle{initial}{\lettrines}
-\grechangestyle{biginitial}{\glettrines\rubrum}
-%\def\greinitialformat#1{{\lettrines #1}}
-%\font\lettrinetexte=l800.ttf at 4\baselineskip
-%\renewcommand{\LettrineFont}{\lettrinetexte}
 \setlength{\DefaultFindent}{-2em}
 \let\oldlettrine\lettrine
 \def\lettrine#1#2{\vspace{-1.5\baselineskip}\oldlettrine{#1}{#2}}
